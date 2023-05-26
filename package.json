@@ -1,0 +1,21 @@
+{
+  "name": "tambola-ticket-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.1",
+    "uuid": "^9.0.0"
+  }
+}

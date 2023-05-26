@@ -1,0 +1,4 @@
+POST http://localhost:5000/api/v1/ticket/generate_ticket?n=6&id=ecae77d1-7c50-47f6-a8f3-6c9b8949b25f
+
+###
+GET http://localhost:5000/api/v1/ticket/get_ticket?offset=3&limit=3&id=ecae77d1-7c50-47f6-a8f3-6c9b8949b25f
