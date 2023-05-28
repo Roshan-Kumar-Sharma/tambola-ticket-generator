@@ -25,3 +25,5 @@ Query:
     limit - number of ticket to fetche (required field)
 Output:
     This API will return an unique id against which the tickets were generated. Use this id in the below mentioned API to get the ticket.
+
+P.S. Currently this program is working perfectly for n = 5 that is when maximum 5 tickets are generated at a single time. For n = 6 the program is getting stuck in infinite loop. This issue will be fixed as soon as possible.

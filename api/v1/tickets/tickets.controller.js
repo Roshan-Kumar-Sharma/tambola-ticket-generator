@@ -1,4 +1,5 @@
 import * as Helper from "../../../utils/helper.js";
+import * as TicketGenerator from "../../../utils/tambola_ticket_generator.js";
 import DB_CONNECTION from "../../../config/db.config.js";
 
 import { v4 as uuidv4 } from "uuid";
@@ -19,7 +20,8 @@ const generateTicket = async (req, res) => {
             if (!isIdExists) id = uuidv4();
         }
 
-        let tambolaTicketSet = Helper.generateTicketSet(totalTicket);
+        // let tambolaTicketSet = Helper.generateTicketSet(totalTicket);
+        let tambolaTicketSet = TicketGenerator.generateTicketSet(totalTicket);
 
         let db_obj = { id, tickets: tambolaTicketSet };
 
